@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>menu</title>
+    <style>
+        .switch{
+            width: 28px;
+            height: 12px;
+            border-radius: 6px;
+            position: relative;
+            cursor: pointer;
+            background-color: #bdc1c6;
+            transition: all 0.2s; 
+        }
+        .switch-button{
+            width: 16px;
+            height: 16px;
+            border-radius: 8px;
+            position: absolute;
+            top: -2px;
+            box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4);
+            transition: all 0.2s; 
+            right: 12px;
+            background-color: #fff
+        }
+        .left{
+            background-color: rgba(26,115,232,0.5);
+        }
+        .left>.switch-button{
+            right: 0;
+            background: #1a73e8;
+        }
+    </style>
+</head>
+<body>
+    <div class="switch">
+        <div class="switch-button"></div>
+    </div>
+</body>
+</html>
